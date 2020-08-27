@@ -1,0 +1,680 @@
+.skip{
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+a {
+    color: #595959;
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    text-decoration:none
+}
+.progress{
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    background-color: #e1e4e8;
+    border-radius:3px ;
+    z-index: 999;
+    height: 2px;
+    background: transparent;
+    transition: none;
+}
+.topbar{
+    height: 40px;
+    line-height: 40px;
+    background: #262626;
+    font-size: 12px;
+}
+.wp{
+    width: 1180px;
+    margin: auto;
+}
+.topbar a{
+    color: #bfbfbf;
+} 
+.f1{
+    float: left;
+}
+.topbar .sep{
+width: 1px;
+height: 12px;
+background: #444444;
+margin: 14px 10px;
+}
+.topbar .cart{
+    width: 124px;
+    text-align: center;
+    margin-left: 20px;
+}
+.topbar .cart-empty{
+    background:#343434;
+    color: #bfbfbf;
+}
+.fr{
+    float: right;
+}
+.drop-qrcode{
+    width: 50px;
+    position: relative;
+    z-index: 9;
+}
+.drop-qrcode .qrcode-box{
+    width: 144px;
+    padding: 3px;
+    position: absolute;
+    top: 42px;
+    left: -50px;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+    display: none;
+}
+.ml10{
+    margin-left: 10px;
+}
+.navs{
+    height: 80px;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+}
+.wp{
+    width: 1180px;
+    margin: auto;
+}
+.navs .logo{
+    float: left;
+    width: 168px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+.navs .logo .icon-logo{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.icon-logo{
+    background-position: -126px -157px;
+    height: 36px;
+    width: 44px;
+}
+.navs .logo .name{
+ font-size: 27px;
+ font-weight: normal;
+ color: #262626;
+ vertical-align: middle;
+ display: inline;
+}
+.navs .menu{
+  margin-left: 75px;
+  height: 80px;
+  line-height: 80px;
+} 
+.fl{
+    float: left;
+}
+.navs .menu .nav{
+    float: left;
+    padding: 0 25px;
+    font-size: 16px;
+}
+.navs .menu-group .sub-menu{
+    width: 100%;
+    height: 275px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    display: none;
+}
+.navs .menu-group:hover .sub-menu {
+    display: block;
+}
+.navs .sub-menu .sub-item{
+    float: left;
+    width: 200px;
+    height: 220px;
+    padding: 20px 0 35px;
+    position: relative;
+}
+.sub-menu .sub-item a{
+    display: block;
+    width: 170px;
+    text-align: center;
+    font-size: 14px;
+}
+.sub-menu .sub-item .cover{
+    display: block;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    line-height: 170px;
+}
+.sub-menu .cover img{
+    width: 170px;
+    height: 170px;
+}
+.sub-menu .sub-item .name{
+    display: block;
+    line-height: 30px;
+    color: #262626;
+}
+.sub-menu .sub-item .price{
+    display: block;
+    line-height: 20px;
+    color: #ea413c;
+}
+.sub-menu .sub-item .sub-sep{
+    content: '/20';
+     position: absolute;
+     height: 100px;
+     width: 1px;
+     background: #e8e8e8;
+     top: 58px;
+     right: 15px;
+}
+.home-root{
+    padding-bottom: 40px;
+}
+.car-wp{
+    padding: 20px 0 10px 0;
+    margin: 0 auto;
+    position: relative;
+}
+.car-wp .car-list-wp .car-list{
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 20px;
+    color: #595959;
+}
+.car-wp .car-list-wp .car-list .thead{
+    background: #fafafafa;
+    width: 1140px;
+    height: 41px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #595959;
+    border: 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+.car-wp .car-list-wp .car-list .thead .tr{
+    width: 1140px;
+    height: 41px;
+}
+.car-wp .car-list-wp .car-list .thead .col-select{
+    border-left: 1px solid #e9e9e9;
+}
+.car-wp .car-list-wp .car-list .col-select{
+    width: 85px;
+}
+.car-wp .car-list-wp .car-list .col-i{
+    width: 518px;
+}
+.car-wp .car-list-wp .car-list .col-price{
+    width: 120px;
+}
+.car-wp .car-list-wp .car-list .col-num{
+    width: 200px;
+}
+.car-wp .car-list-wp .car-list .col-total{
+    width: 120px;
+}
+.car-wp .car-list-wp .car-list .col-handle{
+    width: 95px;
+}
+.car-wp .car-list-wp .car-list .col-handle{
+    border-right: 1px solid #e9e9e9e9;
+}
+.car-wp .car-list-wp .car-list .th{
+    font-weight: bold;
+    float: left;
+    height: 40px;
+    border-top:1px solid #e9e9e9;
+    text-align: center;
+}
+
+.car-wp .car-list-wp .car-list .thead .col-select .select-square{
+    margin: 0 10px 2px 0;
+}
+.car-wp .select-square{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #bfbfbf;
+    background: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+}
+.car-wp .car-list-wp .car-list .tbody .tr{
+    width: 1140px;
+}
+.car-wp .car-list-wp .car-list .tbody .tr .tr-hidden{
+    width: 1140px;
+    height: 128px;
+    overflow: hidden;
+}
+.car-wp .car-list-wp .car-list .td .col-i{
+    text-align: center;
+}
+.car-wp .car-list-wp .car-list .tbody .col-i{
+    float: left;
+}
+.car-wp .car-list-wp .car-list .td{
+    height: 128px;
+    border: 0;
+    border-top: 1px solid #e8e8e8;
+    text-align: center;
+}
+.car-wp .car-list-wp .car-list .td .col-i{
+    width: 98px;
+    height: 98px;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 2px;
+    border: 1px solid #ededed;
+    position: relative;
+}
+.f1{
+    float: left;
+}
+.car-wp .car-list-wp .car-list .tbody .col-select{
+   line-height: 140px;
+   text-align: center;
+}
+.car-wp .car-list-wp .car-list .td .col-i img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+img{
+    border: none;
+    outline: none;
+}
+.car-wp .car-list-wp .car-list .td .col-i .f1 .i-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.car-wp .car-list-wp .car-list .td .col-i .fr{
+    width: 400px;
+    height: 82px;
+    padding-top: 54px;
+}
+.fr{
+    float: right;
+}
+.car-wp .car-list-wp .car-list .td .col-i .i-name{
+    display: inline-block;
+    width: 100%;
+    line-height: 32px;
+}
+.car-wp .car-list-wp .car-list .td .col-i .i-tip{
+    color: #ea413c;
+    font-size: 12px;
+    margin-top:-4px;
+}
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap ;
+    word-break: break-all;
+}
+.car-wp .car-list-wp .car-list .tbody .col-price{
+    line-height: 140px;
+    text-align: center;
+}
+.car-wp .car-list-wp .car-list .tbody .td{
+    float: left;
+}
+.car-wp .car-list-wp .car-list .td{
+    height: 128px;
+    border: 0;
+    border-top: 1px solid #e8e8e8;
+    text-align: center;
+}
+.car-wp .car-list-wp .car-list .tbody .col-num{
+    width: 200px;
+    height: 141px;
+    position: relative;
+}
+.car-wp .car-list-wp .car-list .tbody .col-num .count-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -16px;
+}
+.car-wp .car-list-wp .car-list .count-box{
+    width: 120px;
+    height: 32px;
+}
+.detail-count{
+    margin-top: 20px;
+}
+.count-box{
+    display: inline-block;
+    height: 50%;
+}
+.car-wp .car-list-wp .car-list .count-box .count-btn{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.count-box .count-btn.disable{
+    cursor: pointer;
+    opacity: 0.7;
+} 
+.count-box .count-minus{
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.count-box .count-btn{
+    float: left;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #8c8c8c;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+}
+.icon-cart-minus {
+    background-position: -181px -74px;
+    height: 30px;
+    width: 30px;
+}
+.car-wp .car-list-wp .car-list .count-box .count-input{
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+}
+.count-box .count-input{
+    float: left;
+    width: 70px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #262626;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+}
+input {
+    padding: 0;
+    outline: none;
+}
+.count-box .count-add{
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.icon-cart-plus {
+    background-position: -152px -72px;
+    height: 30px;
+    width: 30px;
+}
+.car-wp .car-list-wp .car-list .td.col-total{
+    color: #ea413c;
+}
+.car-wp .car-list-wp .car-list .tbody .col-total{
+    line-height: 140px;
+    text-align: center;
+}
+.car-wp .car-list-wp .car-list .td.col-handle{
+    width: 95px;
+}
+.car-wp .car-list-wp .car-list .tbody .col-handle{
+    line-height: 140px;
+    text-align: center;
+}
+.car-wp .car-list-wp .car-list .td.col-handle .btn-text{
+    padding: 0 5px;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+.car-wp .btn{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.car-wp .select-square.on .select-icon{
+    display: none;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background: #ea413c;
+}
+.car-wp .select-square.on .select-icon{
+   display: inline-block;
+}
+.car-wp .car-list-wp{
+    font-size:16px;
+}
+.car-wp .car-list-none-wp{
+    height: 345px;
+    padding-top: 135px;
+    background: #fff;
+}
+.car-wp .car-list-none-wp .car-list-none{
+    width: 200px;
+    height: 160px;
+    padding-left: 190px;
+    margin: 0 auto;
+    background: url(https://mall01.sogoucdn.com/cdn/pc/img/cart/cart-none.png?v=0c5c2) 0 0 no-repeat;
+}
+.car-wp .car-list-none-wp .car-list-none .car-list-none-tip{
+    height: 82px;
+    line-height: 82px;
+    color: #595959;
+    font-size: 22px;
+    text-align: center;
+}
+.car-wp .car-list-none-wp .car-list-none-btn{
+    width: 200px;
+}
+.car-wp .car-list-wp .car-list .tbody .tr .car-gift-list{
+    margin-left: 77px;
+    margin-bottom: 15px;
+}
+.button.confirm{
+    background: #ea413c;
+    color: #fff;
+    border: 1px solid #ea413c;
+}
+.button{
+    display: inline-block;
+    height:38px;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.foot{
+    height: 430px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+.toolbar{
+    width: 80px;
+    height: 355px;
+    position: fixed;
+    right: 0;
+    bottom: 60px;
+    z-index: 9;
+    display: none;
+}
+.toolbar-show{
+    display: block;
+}
+.tools{
+    height: 255px;
+    background: #fff;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: 1px solid #eee;
+    border-right: none;
+}
+.toolbar .toolbar-btn:first-child{
+    border-top: none;
+}
+.toolbar .toolbar-btn{
+    display: block;
+    width: 60px;
+    height: 70px;
+    padding-top: 14px ;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+}
+.toolbar .toolbar-btn i{
+    display: block;
+    margin: 0 auto 10px;
+}
+.icon-toolbar-ucenter{
+    background-position: 0 -103px;
+    height: 32px;
+    width: 32px;
+}
+.icon-toolbar-cart{
+    background-position: -127px -103px;
+    height: 32px;
+    width: 32px;
+}
+.car-wp .car-list-wp .car-list .td.col-i .f1{
+    width: 98px;
+    height: 98px;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius:2px ;
+    border: 1px solid #ededed;
+    position: relative;
+}
+.car-wp .car-list-wp .car-list .td.col-i .f1 img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.car-wp .car-list-wp .car-list .td.col-i .fr {
+    width: 400px;
+    height: 82px;
+    padding-top: 54px;
+}
+.car-wp .car-list-wp .car-list .td.col-i .i-name {
+    display: inline-block;
+    width: 100%;
+    line-height: 32px;
+}
+.car-wp .car-list-wp .car-list .td.col-i .i-tip {
+    color: #ea413c;
+    font-size: 12px;
+    margin-top: -4px;
+}
+.car-wp .car-list-wp .cart-info-placeholder{
+    height:58px;
+}
+.car-wp .car-list-wp .cart-info-placeholder .cart-info-wp{
+    width: 100%;
+}
+.fl{
+    float: left;
+}
+.car-wp .select-square{
+    display:inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #bfbfbf;
+    background: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+.car-wp .car-list-wp .cart-info-placeholder .cart-info-wp .cart-info{
+    width: 1180px;
+    height: 58px;
+    line-height: 58px;
+    border-radius: 2px;
+    background: #fff;
+    margin:0 auto;
+}
+.car-wp .car-list-wp .cart-info-placeholder .cart-info-wp  .cart-info
+.total-select{
+    margin-left: 40px;
+}
+.car-wp .car-list-wp .cart-info-placeholder .cart-info-wp  .cart-info
+span{
+    color: #595959;
+}
+.car-wp .car-list-wp .cart-info-placeholder .cart-info-wp  .cart-info
+.total-select .select-square{
+    margin: 0 10px 6px 0;
+}
+.car-wp .car-list-wp .cart-info-placeholder .cart-info-wp  .cart-info
+.seprate{
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    background: #e6e6e6;
+    margin: 17px 20px;
+}
+.car-wp .car-list-wp .cart-info-placeholder .cart-info-wp  .cart-info
+.cart-total{
+    color: #ea413c;
+    font-weight:bold;
+}
+.car-wp .car-list-wp .cart-info-placeholder .cart-info-wp  .cart-info
+.cart-sub-btn{
+    width: 140px;
+    height: 56px;
+    line-height: 56px;
+    margin-left: 20px;
+    border-radius: 0;
+}
+.button.confirm{
+    background: #ea413e;
+    color: #fff;
+    border: 1px solid #ea413c;
+}
+.button{
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+    text-align: center;
+    border-radius:2px ;
+    cursor: pointer;
+}
+.car-wp .car-list-wp .cart-info-placeholder .cart-info-wp  .cart-info
+.cart-selected-num{
+    color: #ea413c;
+}

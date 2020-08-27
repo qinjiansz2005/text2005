@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜狗商城首页</title>
+    <link rel="stylesheet" href="../css/rest.css">
+    <link rel="stylesheet" href="../css/one.css">
+    <link rel="stylesheet" href="../images/icon.png">
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/goods.js"></script>
+    <script src="../js/indextemple.js"></script>
+
+</head>
+<body>
+    <div id="app">
+    <div class="root">
+        <a href="#app" class="skip">跳过导航</a>
+        <header>
+            <span class="progress hide">
+                <span class="progress progress-loader-barprogress"></span>
+            </span>
+            <div class="topbar h5-hide">
+             <div class="wp cl"> 
+                 <a href="./swiper.html" class="f1" >搜狗商城</a>
+                 <span class="sep f1"></span>
+                 <a href="" class="f1" >意见反馈</a>
+                 <span class="sep f1"></span>
+                 <a href="" class="f1">收藏本站</a>
+                 <a href="" class="cart fr cart-empty">购物车(0)</a>
+                 <a href="" class="fr service">在线客服</a>
+                 <span class="sep fr"></span>
+                 <a href="" class=" fr drop-qrcode">手机商城
+                     <div class="qrcode-box">
+
+                     </div>
+                 </a>
+                 <span class="sep fr"></span>
+                 <a href="" class="fr ">S码通道</a>
+                 <span class="sep fr"></span>
+                 <a href="register.html" class="fr ml10">注册</a>
+                 <a href="./index.html" class="fr " >登录</a>
+             </div>
+            </div>
+            <nav class="navs h5-hide">
+                <div class="wp cl">
+                      <a href="" class="logo fl">
+                          <span class="icon-logo"></span>
+                          <span class="name">搜狗商城</span>
+                      </a>
+                      <ul class="menu fl">
+                          <li class="nav">
+                              <a href="./swiper.html" >首页</a>
+                          </li>
+                          <li class="nav menu-group" id="ft">
+                            <a href="" class="top-lnk"  >智能翻译</a>
+                            <div class="sub-menu h5-hide">
+                                <ul class="wp cl" id="goods">
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav menu-group" id="ft">
+                            <a href="" class="top-lnk">唐猫手表</a>
+                            <div class="sub-menu h5-hide">
+                                <ul class="wp cl" id="firsts">
+                                   
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav menu-group" id="ft">
+                            <a href="" class="top-lnk">配件</a>
+                            <div class="sub-menu h5-hide">
+                                <ul class="wp cl" id="three">
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav">
+                            <a href="" >社区</a>
+                        </li>
+                        <li class="nav">
+                            <a href="./swiper.html" >录音笔网页版</a>
+                        </li>
+                      </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="app-content">
+           <div class="login-main">
+            <a href="" class="bglink" style="background-image:url('https://mall03.sogoucdn.com/image/2019/03/18/20190318095532_4592.png');"></a>
+            <div class="login-form">
+            <div class="login-form-titleArea">
+             <div class="login-form-title">密码登录</div>
+             <div class="login-form-line">|</div>
+             <div class="login-form-title">账号登录</div>
+            </div>
+            <div class="input-row">
+             <div class="input-box">
+                <input id="un" class="input-txt" type="text" autofocus placeholder="请输入手机号">
+             </div>
+           </div>
+            <div class="input-row">
+                <div class="input-box">
+                <input type="password" id="pw" class="input-txt" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="input-row row-btn">
+                <a href="javascript:;" pbtag="登录" class="login-btn disabled" id="submit">登 录 </a>
+            </div>
+            <div class="input-row row-links c1">
+                <a href="" class="h5-regbth f1" >手机号注册</a>
+            </div>
+            </div>
+           </div>
+        </main>
+        <footer class="footer h5-hide">
+            <div class="toolbar toolbar-show ">
+                <div class="tools">
+                    <a href="" class="toolbar-btn">
+                        <i class="icon-toolbar-ucenter"></i>
+                        <span>个人中心</span>
+                    </a>
+                    <a href="./car.html" class="toolbar-btn">
+                        <i class="icon-toolbar-cart"></i>
+                        <span>购物车</span>
+                    </a>
+    
+                </div>
+            </div>
+            </footer>
+    </div>
+</div>
+<script src="../lib/template-web.js"></script>
+<script type="text/template" id="goodsList">
+    <% for(var i = 0;i<list.length;i++){%>
+        <li class="sub-item">
+            <a href="detail.html?id=<%=list[i].id%>">
+                <span class="cover">
+                    <img src="<%=list[i].img[0]%>" alt="">
+                </span>
+                <span class="name"><%=list[i].name%></span>
+                <span class="price">￥<%=list[i].price%></span>
+            </a>
+            <span class="sub-sep"></span>
+        </li>
+   <% }%>
+</script>
+<script type="text/template" id="goodsList2">
+<%for(var i =0;i<list.length;i++){%>
+    <li class="sub-item">
+        <a href="detail.html?id=<%=list[i].id%>" >
+            <span class="cover">
+                <img src="<%=list[i].img[1]%>" alt="">
+            </span>
+            <span class="name"><%=list[i].name%></span>
+            <span class="price">￥<%=list[i].price%></span>
+        </a>
+        <span class="sub-sep"></span>
+    </li>
+<%}%>
+</script>
+<script type="text/template" id="goodsList3">
+    <% for(var i = 0;i<list.length;i++){%>
+        <li class="sub-item">
+            <a href="detail.html?id=<%=list[i].id%>">
+                <span class="cover">
+                    <img src="<%=list[i].img[2]%>" alt="">
+                </span>
+                <span class="name"><%=list[i].name%></span>
+                <span class="price">￥<%=list[i].price%></span>
+            </a>
+            <span class="sub-sep"></span>
+        </li>
+   <% }%>
+</script>
+<script>
+    $(function () {
+    // 登录功能
+    $('#submit').click(function(){
+        $.ajax({
+            method:'post',
+            url:'../../../shopping/server/login.php',
+            data:{
+                username:$('#un').val(),
+                password:$('#pw').val()
+            },
+         success:function(data){
+             if(data.code==1){
+                //  成功 将用户名存入本地
+                localStorage.setItem('un',data.data.username)
+                // 跳转登录
+                location.href="./swiper.html"
+                
+
+             }else{
+                //  失败
+                alert(data.msg)
+             }
+         },
+         dataType:'json'
+        })
+    })
+    
+    $('.fr').eq(8).html('你好'+localStorage.getItem('un'));
+    })
+</script>
+
+</body>
+</html>

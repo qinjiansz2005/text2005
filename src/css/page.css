@@ -1,0 +1,226 @@
+.mod-title{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.mod-title .title{
+    font-size: 22px;
+    font-weight: normal;
+    color: #262626;
+    margin-right: 20px;
+    display: inline;
+}
+.mod-title .dsec{
+    font-size: 16px;
+    color: #8c8c8c;
+}
+.product-list{
+    width: 1200px;
+}
+.home-root
+.product-list a{
+    margin-bottom: 0;
+}
+.imgs2 a{
+    width: 580px;
+}
+.imgs a{
+display: block;
+background: transparent;
+}
+.product-list a{
+    float: left;
+    background: #fff;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+    transition: 0.3s;
+    top: 0;
+    border-radius: 2px;
+}
+img a .imgs{
+ display: block;
+ width: 100%;  
+ height: auto;
+ border-radius: 2px;
+}
+img{
+    border: none;
+    outline: none;
+}
+.product-list .product{
+    width: 240px;
+    height: 330px;
+    padding: 20px;
+    text-align: center;
+}
+.product-list a {
+    float: left;
+    background: #fff;
+    margin-right:20px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: 0.3s;
+    top:0;
+    border-radius: 2px;
+}
+.product-list .product img{
+    width: 240px;
+    height: 240px;
+    display: block;
+}
+img{
+    border: none;
+    outline: none;
+}
+.product-list .product .name{
+    display: block;
+    font-size: 16px;
+    color: #262626;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.product-list .product .dsec{
+    display: block;
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 14px;
+    height: 20px;
+    overflow:hidden ;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.product-list .product .price{
+    color: #ea413c;
+    font-size: 14px;
+}
+.products .price span{
+    vertical-align: middle;
+}
+.imgs1 a{
+    width: 1180px;
+}
+.imgs a{
+    display: block;
+    background: transparent;
+}
+.imgs a img{
+     display: block;
+     width: 100%;
+     height: auto;
+     border-radius: 2px;
+}
+.swiper2{
+    width: 1180px;
+    height: 400px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: block;
+}
+.product-list a:hover {
+    top: -4px;
+    box-shadow: 0px 10px 14px 0 rgba(0,0,0,0.08)
+}
+
+.product-list.no-shadow a:hover {
+    top: 0;
+    box-shadow: none
+}
+.foot{
+    height: 430px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+.toolbar{
+    width: 80px;
+    height: 355px;
+    position: fixed;
+    right: 0;
+    bottom: 60px;
+    z-index: 9;
+    display: none;
+}
+.toolbar-show{
+    display: block;
+}
+.tools{
+    height: 255px;
+    background: #fff;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: 1px solid #eee;
+    border-right: none;
+}
+.toolbar .toolbar-btn:first-child{
+    border-top: none;
+}
+.toolbar .toolbar-btn{
+    display: block;
+    width: 60px;
+    height: 70px;
+    padding-top: 14px ;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+}
+.toolbar .toolbar-btn i{
+    display: block;
+    margin: 0 auto 10px;
+}
+.icon-toolbar-ucenter{
+    background-position: 0 -103px;
+    height: 32px;
+    width: 32px;
+}
+.icon-toolbar-cart{
+    background-position: -127px -103px;
+    height: 32px;
+    width: 32px;
+}
+.toolbar .gotop{
+    position: absolute;
+    width: 80px;
+    left: 0;
+    bottom: 0;
+    background:#fff;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: 1px solid #eee;
+    border-right: none;
+} 
+.toolbar .toolbar-btn:first-child{
+    border-top:none;
+}
+.toolbar .toolbar-btn{
+    display: block;
+    width: 60px;
+    height: 70px;
+    padding-top:14px;
+    background: #fff;
+    text-align: center;
+    margin:auto;
+    border-radius: 1px solid #8e8e8e;
+    cursor: pointer;
+    position: relative;
+}
+.toolbar .toolbar-btn i{
+    display: block;
+    margin: 0 auto 10px;
+}
+.icon-toolbar-top{
+    background-position: -64px -106px;
+    height: 32px;
+    width: 32px;
+}
+.toolbar-btn:hover .icon-toolbar-top {
+    background-position: -95px -106px;
+}
+.toolbar-btn:hover span{
+    color: #ea413c;
+}

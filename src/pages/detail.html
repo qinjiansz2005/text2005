@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="../css/rest.css">
+    <link rel="stylesheet" href="../css/one.css">
+    <link rel="stylesheet" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/detail.css">
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/goods.js"></script>
+    <script src="../js/goCart.js"></script>
+    <script src="../js/Letscar.js"></script>
+    <script src="../js/indextemple.js"></script> 
+    
+</head>
+<body>
+    <div id="app">
+    <div class="root">
+        <a href="#app" class="skip">跳过导航</a>
+        <header>
+            <span class="progress hide">
+                <span class="progress progress-loader-barprogress"></span>
+            </span>
+            <div class="topbar h5-hide">
+             <div class="wp cl"> 
+                 <a href="javascript:;" class="f1" >搜狗商城</a>
+                 <span class="sep f1"></span>
+                 <a href="javascript:;" class="f1" >意见反馈</a>
+                 <span class="sep f1"></span>
+                 <a href="javascript:;" class="f1">收藏本站</a>
+                 <a href="javascript:;" class="cart fr cart-empty">购物车(0)</a>
+                 <a href="javascript:;" class="fr service">在线客服</a>
+                 <span class="sep fr"></span>
+                 <a href="javascript:;" class=" fr drop-qrcode">手机商城
+                     <div class="qrcode-box">
+
+                     </div>
+                 </a>
+                 <span class="sep fr"></span>
+                 <a href="javascript:;" class="fr ">S码通道</a>
+                 <span class="sep fr"></span>
+                 <a href="register.html" class="fr ml10">注册</a>
+                 <a href="index.html" class="fr ">登录</a>
+             </div>
+            </div>
+            <nav class="navs h5-hide">
+                <div class="wp cl">
+                      <a href="" class="logo fl">
+                          <span class="icon-logo"></span>
+                          <span class="name">搜狗商城</span>
+                      </a>
+                      <ul class="menu fl">
+                          <li class="nav">
+                              <a href="swiper.html" >首页</a>
+                          </li>
+                          <li class="nav menu-group" id="ft">
+                            <a href="javascript:;" class="top-lnk"  >智能翻译</a>
+                            <div class="sub-menu h5-hide">
+                                <ul class="wp cl" id="goods">  
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav menu-group" id="ft">
+                            <a href="javascript:;" class="top-lnk">唐猫手表</a>
+                            <div class="sub-menu h5-hide">
+                                <ul class="wp cl" id="firsts">
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav menu-group" id="ft">
+                            <a href="javascript:;" class="top-lnk">配件</a>
+                            <div class="sub-menu h5-hide">
+                                <ul class="wp cl" id="three">
+                                   
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav">
+                            <a href="javascript:;" >社区</a>
+                        </li>
+                        <li class="nav">
+                            <a href="swiper.html" >录音笔网页版</a>
+                        </li>
+                      </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="app-content">
+           <div class="detail">
+                <div class="sitepath detail-nav wp">
+                    <a href="swiper.html" >商城首页</a>
+                    <i class="icon-arr-right"></i>
+                    <a href="javascript:;">智能翻译</a>
+                    <i class="icon-arr-right"></i>
+                    <span class="goods_name"></span>
+                  </div>   
+                  <div class="detail-introduce wp">
+                      <div class="detail-image-container">
+                          <div class="detail-swiper-box">
+                              <div class="detail-img-list">
+                                  <div class="detail-img-box show">
+                                     
+                                  </div>
+                              </div>
+                              <div class="detail-thumbnail">
+                          <div class="detail-thumbnail-btn detail-thumbnail-prev disable">
+                              <i class="icon-thumbnail-left-disable"></i>
+                          </div>
+                          <div class="detail-thumbnail-list">
+                              <div class="detail-thumbnail-inner" style="width:450px">
+                                
+                            </div>
+                           </div>
+                           <div class="detail-thumbnail-btn detail-thumbnail-next disable">
+                                <i class="icon-thumbnail-right-disable"></i>
+                            </div>
+                            </div>
+                          </div>
+                      </div>
+                       <div class="detail-wrap">
+                                <div class="detail-title goods_name"></div>
+                                <div class="detail-intro description"></div>
+                                <div class="detail-wrap-box">
+                                    <span class="detail-price-rmb">￥</span>
+                                    <span class="detail-price">798</span>
+                                    <span class="detail-tag">包邮</span>
+                                </div>
+                                <div class="detail-sku-box">
+                                    <div class="sku-select-box">
+                                        <p class="sku-option-box">颜色</p>
+                                        <div class="sku-option-list">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-count-box">
+                                    <p class="detail-count-text">数量</p>
+                                    <div class="count-box detail-count">
+                                        <div class="count-btn count-minus disable">
+                                            <div class="icon-detail-minus"></div>
+                                        </div>
+                                         <input type="text" maxlength="2" class="count-input">
+                                    <a href="javascript:;" class="count-btn count-add">
+                                        <div class="icon-detail-add"></div>
+                                    </a>
+                                    </div>
+                                   <div class="detail-btn-box">
+                                       <div class="button hollow w188 mr20 h48 lh48">
+                                           <span>加入购物车</span>
+                                       </div>
+                                       <div class="button confirm hollow w188 mr20 h48 lh48">
+                                        <span>立即购买</span>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                           </div>
+                     <div ></div>
+                            <div class="dialog-mask"></div>
+                            <div class="dialog-box w500">
+                                <div class="icon-dialog-close "></div>
+                                <div class="dialog-content">
+                                    <div class="detail-shapping-pop-box">
+                                        <div class="detail-shapping-title">
+                                            <i class="icon-pop-success-60">
+                                            </i> 
+                                            商品已经加入购物车
+                                        </div>
+                                        <div class="button confirm w158 h38" >
+                                            <span>去结算</span>
+                                        </div>
+                                        <div class="button cancel w158 h38 m120">
+                                            <span>继续逛逛</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display:none"></div>
+            </div>
+        </main>
+        <footer class="footer h5-hide">
+            <div class="toolbar toolbar-show ">
+                <div class="tools">
+                    <a href="javascript:;" class="toolbar-btn">
+                        <i class="icon-toolbar-ucenter"></i>
+                        <span>个人中心</span>
+                    </a>
+                    <a href="car.html" class="toolbar-btn">
+                        <i class="icon-toolbar-cart"></i>
+                        <span>购物车</span>
+                    </a>
+    
+                </div>
+                <div class="gotop">
+                <a href="javascript:;" class="toolbar-btn">
+                    <i class="icon-toolbar-top"></i>
+                    <span class="name">回到顶部</span>
+                </a>
+            </div>
+            </div>
+            
+            </footer>
+    </div>
+</div>
+<script src="../lib/template-web.js"></script>
+<script type="text/template" id="goodsList">
+    <% for(var i = 0;i<list.length;i++){%>
+        <li class="sub-item">
+            <a href="detail.html?id=<%=list[i].id%>">
+                <span class="cover">
+                    <img src="<%=list[i].img[0]%>" alt="">
+                </span>
+                <span class="name"><%=list[i].name%></span>
+                <span class="price">￥<%=list[i].price%></span>
+            </a>
+            <span class="sub-sep"></span>
+        </li>
+   <% }%>
+</script>
+<script type="text/template" id="goodsList2">
+<%for(var i =0;i<list.length;i++){%>
+    <li class="sub-item">
+        <a href="detail.html?id=<%=list[i].id%>" >
+            <span class="cover">
+                <img src="<%=list[i].img[1]%>" alt="">
+            </span>
+            <span class="name"><%=list[i].name%></span>
+            <span class="price">￥<%=list[i].price%></span>
+        </a>
+        <span class="sub-sep"></span>
+    </li>
+<%}%>
+</script>
+<script type="text/template" id="goodsList3">
+    <% for(var i = 0;i<list.length;i++){%>
+        <li class="sub-item">
+            <a href="detail.html?id=<%=list[i].id%>">
+                <span class="cover">
+                    <img src="<%=list[i].img[2]%>" alt="">
+                </span>
+                <span class="name"><%=list[i].name%></span>
+                <span class="price">￥<%=list[i].price%></span>
+            </a>
+            <span class="sub-sep"></span>
+        </li>
+   <% }%>
+</script>
+
+<script type="text/template" id="imgList">
+    <% for(var i = 0;i<list.length;i++){%>
+        <div class="detail-thumbnail-item">
+            <img src="<%=list[i]%>" alt="">
+        </div>
+   <% }%>
+</script>
+<script type="text/template" id="colorList">
+    <% for(var i = 0;i<list.length;i++){%>
+        <a href="javascript:;" class="sku-option">
+            <span class="老版录音笔"></span>
+            <%=list[i]%>
+        </a>
+   <% }%>
+</script>
+<script>
+    // 获取ID
+    $(function () {
+        function getUrlPreams (name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+            return unescape(r[2]);
+            }
+            return null;
+        }
+
+        var id = Number(getUrlPreams('id'))
+        var goodsDetail = null
+
+        goods.forEach(item => {
+            if (item.id === id) {
+                goodsDetail = item
+            }
+        })
+
+        // 渲染图片列表
+        var htmlStr = template('imgList',{
+        'list':goodsDetail.img
+        })
+        $('.detail-thumbnail-inner').html(htmlStr)
+
+        // 渲染颜色列表
+        var htmlStr = template('colorList',{
+        'list':goodsDetail.color
+        })
+        $('.sku-option-list').html(htmlStr)
+
+        // 点击小图
+        $('.detail-img-box').html('<img class="detail-img-item" src="'+ goodsDetail.img[0] +'" alt="">')
+
+        $('.detail-thumbnail-item').eq(0).addClass('active')
+        $('.detail-thumbnail-item').click(function () {
+            $('.detail-thumbnail-item').removeClass('active')
+            $(this).addClass('active')
+            $('.detail-img-box').html('<img class="detail-img-item" src="'+ goodsDetail.img[$(this).index()] +'" alt="">')
+        })
+
+        // 点击颜色
+        $('.sku-option').eq(0).addClass('active')
+        console.log($('.sku-option').eq(0).addClass('active'))
+        $('.sku-option').click(function () {
+            $('.sku-option').removeClass('active')
+            $(this).addClass('active')
+        })
+        // $('.sku-option').click(function(){
+        //     console.log($(this).text())
+            
+        // })
+        $('.count-minus').click(function(){
+          var minus = $(this).siblings().eq(0).val()
+            minus--
+            $(this).siblings().eq(0).val(minus)
+            if(minus<=0){
+               return $(this).siblings().eq(0).val(0)
+            }
+        })
+        $('.count-add').click(function(){
+            var adds = $(this).siblings().eq(1).val()
+            adds++
+            $(this).siblings().eq(1).val(adds)
+            if(adds>10){
+               return $(this).siblings().eq(1).val(10)
+            }
+        })
+        // 渲染标题等信息
+        $('.goods_name').html(goodsDetail.name)
+        $('.description').html(goodsDetail.description)
+        $('.detail-price').html(goodsDetail.price)
+
+
+        // 数量
+        var num = 0
+        var reg = /\d$/
+        $('.count-input').val(num)
+
+        $('.count-input').change(function () {
+            if (parseInt($(this).val()) > 10) {
+                $(this).val(10)
+            }
+            if (reg.test($(this).val())) {
+                return
+            } else {
+                $(this).val(0)
+            }
+            
+        })
+
+        $('.fr').eq(8).html('你好'+localStorage.getItem('un'));
+    })
+</script>
+</body>
+</html>

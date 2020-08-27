@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,figure,figcaption{
+	margin:0;
+	padding:0;	
+}
+body,html{
+	font:12px "微软雅黑",Arial;	
+	background: #f5f5f5;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+	font-weight:normal;
+	font-size:100%;	
+}
+i,em{
+	font-style:normal;
+}
+img{
+	vertical-align:middle;	
+}
+ul,ol,li{
+	list-style:none;	
+}
+/* a{
+	color:#666;	
+    text-decoration:none;
+    
+} */
+a:hover{text-decoration:none}
+input{
+	outline:none;	
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	height:0;
+	overflow:hidden;
+	clear:both;	
+}
+.icon-sprite, .icon-add-cart, .icon-addr-add, .icon-arr-down-bold, .icon-arr-down, .icon-arr-right, .icon-article-history, .icon-article-onlin-kefu, .icon-article-online-kefu-red, .icon-article-return-top, .icon-article-share, .icon-article-wx, .icon-box-close, .icon-box-select, .icon-cart-i-mask-future, .icon-cart-i-mask-none, .icon-cart-i-mask-out, .icon-cart-minus, .icon-cart-plus, .icon-cart-white, .icon-close, .icon-coupon-close, .icon-coupon-down, .icon-coupon-up, .icon-detail-add, .icon-detail-guarantee, .icon-detail-minus, .icon-detail-play, .icon-detail-to, .icon-detail-video-close, .icon-dialog-close, .icon-guide-add, .icon-guide-minus, .icon-guide-succ, .icon-live-close, .icon-live-code, .icon-live-decorate, .icon-live-goods, .icon-lock-info, .icon-logo, .icon-mall-logo, .icon-order-arr-close-s, .icon-order-arr-close, .icon-order-arr-open-s, .icon-order-arr-open, .icon-order-btn-check, .icon-page-more, .icon-pay-alipay, .icon-pay-wxpay, .icon-play, .icon-pop-success-60, .icon-pop-success-80, .icon-pwd-hide, .icon-pwd-show, .icon-readCount, .icon-readCountPC, .icon-redpacket-close, .icon-refund-close, .icon-refund-only, .icon-refund-refund, .icon-refund-repair, .icon-service-7, .icon-service-ai, .icon-service-bao, .icon-service-life, .icon-service-safe, .icon-service-tech, .icon-service-translate, .icon-sort-asc-selected, .icon-sort-asc, .icon-sort-desc-selected, .icon-sort-desc, .icon-swiper-next, .icon-swiper-prev, .icon-third-logo, .icon-thumbnail-left-disable, .icon-thumbnail-left, .icon-thumbnail-right-disable, .icon-thumbnail-right, .icon-toolbar-cart-red, .icon-toolbar-cart, .icon-toolbar-kefu-red, .icon-toolbar-kefu, .icon-toolbar-top-red, .icon-toolbar-top, .icon-toolbar-ucenter-red, .icon-toolbar-ucenter, .icon-ucenter-addr, .icon-ucenter-coupon, .icon-ucenter-gift, .icon-ucenter-index, .icon-ucenter-order, .icon-ucenter-presell, .icon-ucenter-scode, .icon-ucenter-service, .icon-uchome-cart, .icon-uchome-nopay, .icon-uchome-noreceive, .icon-uchome-nosend, .icon-video-close, .icon-video, .icon-wangan, .icon-warn-80, .toolbar .toolbar-btn:hover .icon-toolbar-ucenter, .toolbar .toolbar-btn:hover .icon-toolbar-cart, .toolbar .toolbar-btn:hover .icon-toolbar-top, .order-wp .sec-addr .addr-list-open-btn:hover i, .order-wp .sec-addr .addr-list-close-btn:hover i, .order-wp .sec-coupon .coupon-list-open-btn i, .order-wp .sec-coupon .coupon-list-open-btn:hover i, .order-wp .sec-coupon .coupon-list-close-btn i, .order-wp .sec-coupon .coupon-list-close-btn:hover i, .pay-info .info .lnk:hover i {
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/registers.css">
+    <link rel="stylesheet" href="../css/rest.css">
+    <script src="../lib/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="login-from register-from">
+        <h2 class="h5-hide">注册</h2>
+    
+    <!-- 用户名 -->
+    <div class="input-row">
+        <div class="input-box">
+            <input id="un" type="text" class="input-txt" tupe="text" placeholder="请输入用户名" autofocus>
+        </div>
+    </div>
+    <!-- 密码 -->
+    <div class="input-row row-pwd">
+        <div class="input-box">
+            <input id='pw' type="password" class="input-txt" placeholder="设置6-16位密码（区分大小写）">
+        </div>
+    </div>
+    <div class="input-row row-err-tip"></div>
+    <!-- 注册按钮 -->
+    <div class="input-row row-btn">
+        <a href="javascript:;" class="login-btn disabled" id="submit">
+            快速注册
+        </a>
+    </div>
+</div>
+<script>
+    $(function(){
+      $('#submit').click(function(){
+          
+          $.ajax({
+             method:'post',
+             url:'.././server/register.php',
+            data:{
+                username:$('#un').val(),
+                password:$('#pw').val()
+            },
+            success:function(data){
+                if(data.code == 1){
+                    // 跳转成功
+                     location.href='../../商城系统/index.html'
+                }else{
+                    // 失败
+                    alert(data.msg)
+                }
+            },
+            dataType:'json'
+          })
+      })
+    })
+</script>
+</body>
+</html>
